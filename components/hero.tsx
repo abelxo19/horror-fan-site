@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 import { inter } from "@/fonts"
 
+
+
 export default function Hero() {
   return (
     <section className={`relative text-gray-800 overflow-hidden ${inter.className}`}>
@@ -43,7 +45,9 @@ export default function Hero() {
               Start Free Trial
             </Button>
           </motion.div>
-          <div className="relative max-w-md mx-auto">hi!</div>
+          <div className="relative max-w-md mx-auto">
+           
+          </div>
         </div>
       </div>
     </section>
