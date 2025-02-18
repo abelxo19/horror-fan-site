@@ -1,7 +1,7 @@
 "use client"
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
-import { creepster, inter } from "@/fonts"
+import { inter } from "@/fonts"
 
 export default function Hero() {
   return (
@@ -10,7 +10,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <h1
-              className={`text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-[#232e44] ${creepster.className}`}
+              className={`text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-[#e7e8eb] font-nosifer`}
             >
               Welcome to the{" "}
               <motion.span
@@ -35,11 +35,11 @@ export default function Hero() {
                 Nightmare
               </motion.span>
             </h1>
-            <p className="text-base mb-8 text-gray-600">
+            <p className="text-base mb-8 text-white">
               A hub for horror fans, by horror fans. Browse and share your favorite horror movies and
               fiction with a community.
             </p>
-            <Button size="lg" className="bg-[#232e44] text-white">
+            <Button size="lg" className="bg-black text-white">
               Start Free Trial
             </Button>
           </motion.div>
