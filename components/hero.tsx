@@ -1,17 +1,20 @@
 "use client"
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
+import { creepster, inter } from "@/fonts"
 
 export default function Hero() {
   return (
-    <section className="relative text-gray-800 overflow-hidden">
+    <section className={`relative text-gray-800 overflow-hidden ${inter.className}`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-[#232e44]">
+            <h1
+              className={`text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-[#232e44] ${creepster.className}`}
+            >
               Welcome to the{" "}
               <motion.span
-                className="text-white bg-[#232e44] px-2 inline-block"
+                className="text-[#232e44] px-2 inline-block"
                 animate={{
                   opacity: [1, 0.7, 0.9, 1, 0.8, 1],
                   textShadow: [
@@ -33,7 +36,7 @@ export default function Hero() {
               </motion.span>
             </h1>
             <p className="text-base mb-8 text-gray-600">
-              An open-source hub for horror fans, by horror fans. Browse and share your favorite horror movies and
+              A hub for horror fans, by horror fans. Browse and share your favorite horror movies and
               fiction with a community.
             </p>
             <Button size="lg" className="bg-[#232e44] text-white">
