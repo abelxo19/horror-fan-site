@@ -1,39 +1,32 @@
-'use client'
-import { motion } from "framer-motion";
-import { FC } from "react";
+import { Button } from "./ui/button";
+import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server'
+import Link from 'next/link'
+import { buttonVariants } from './ui/button'
 
-interface ShinyButtonProps {
-  text: string;
-}
 
-const ShinyButton: FC<ShinyButtonProps> = ({ text }) => {
+const ShinyButton = async () => {
+  const { getUser } = getKindeServerSession()
+  const user = await getUser()
   return ( 
-    <motion.button
-      initial={{ "--x": "100%", scale: 1 }}
-      animate={{ "--x": "-100%" }}
-      whileTap={{ scale: 0.97 }}
-      transition={{
-        repeat: Infinity,
-        repeatType: "loop",
-        repeatDelay: 1,
-        type: "spring",
-        stiffness: 20,
-        damping: 15,
-        mass: 2,
-        scale: {
-          type: "spring",
-          stiffness: 10,
-          damping: 5,
-          mass: 0.1,
-        },
-      }}
-      className="px-6 py-2 rounded-md relative radial-gradient"
-    >
-      <span className="text-neutral-100 tracking-wide font-light h-full w-full block relative linear-mask">
-        {text}
-      </span>
-      <span className="block absolute inset-0 rounded-md p-px linear-overlay" />
-    </motion.button>
+  <div className="">
+      {user ? (
+              <>
+                <Link
+                  href='/api/auth/logout'
+                  className={buttonVariants({
+                    size: 'sm',
+                    variant: 'ghost',
+                  })}>
+                  Sign out
+                  </Link> 
+                  </> ) : (
+                    <>
+                    <Button size="lg" className="bg-black text-white">Get Started</Button>
+                    <Button size="lg" className="bg-white text-black">Get Started</Button>
+
+                    </>
+                )}
+  </div>
   );
 };
 

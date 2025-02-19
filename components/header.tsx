@@ -1,32 +1,16 @@
-"use client";
-
-import { useState, useEffect } from "react";
 import Image from "next/image";
 import Logo from "@/public/logo-2.png";
 import Link from "next/link";
 import ShinyButton from "@/components/shiny-button";
 
+
+
 const Header = () => {
-  const [scrolling, setScrolling] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolling(true);
-      } else {
-        setScrolling(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-30 transition-all duration-300 ${
-        scrolling ? "bg-black/80 backdrop-blur-md shadow-lg my-[-5px]" : "bg-transparent" 
-      }`}
+      className={`fixed top-0 left-0 w-full z-30 transition-all duration-300 `}
     >
       <div className="container mx-auto">
         <div className="flex justify-between items-center px-4 ">
@@ -47,7 +31,7 @@ const Header = () => {
               Contact
             </Link>
           </nav>
-          <ShinyButton text="Get Started" />
+          <ShinyButton/>
         </div>
       </div>
     </header>
