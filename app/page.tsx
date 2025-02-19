@@ -1,6 +1,7 @@
 import Hero from "../components/hero";
 import Header from "../components/header";
 import Features from "@/components/features";
+import CTA from "@/components/cta";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <Hero />
       </main>
       <Features/>
+      <CTA/>
     </div>
   );
 }
