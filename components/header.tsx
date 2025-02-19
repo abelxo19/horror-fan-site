@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Logo from "@/public/logo-2.png";
 import Link from "next/link";
-import ShinyButton from "@/components/shiny-button";
+import { Button, buttonVariants } from "./ui/button";
+import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server'
 
-
-
-const Header = () => {
+const Header = async() => {
   
-
+  const { getUser } = getKindeServerSession()
+  const user = await getUser()
   return (
     <header
       className={`fixed top-0 left-0 w-full z-30 transition-all duration-300 `}
@@ -31,7 +31,23 @@ const Header = () => {
               Contact
             </Link>
           </nav>
-          <ShinyButton/>
+          {user ? (
+              <>
+                <Link
+                  href='/api/auth/logout'
+                  className={buttonVariants({
+                    size: 'sm',
+                    variant: 'ghost',
+                  })}>
+                  Sign out
+                  </Link> 
+                  </> ) : (
+                    <>
+                    <Link href='/api/auth/register'>
+                    <Button size="lg" className="bg-black text-white">Get Started</Button>
+                    </Link>
+                    </>
+                )}
         </div>
       </div>
     </header>
