@@ -33,7 +33,7 @@ const Header = () => {
           <Link href="/">
             <Image src={Logo} alt="Logo-Image" width={70} height={70} />
           </Link>
-          <nav className="hidden md:flex space-x-4">
+          <nav className="hidden md:flex space-x-4 text-lg font-medium">  
             <Link href="/" className="text-white hover:text-black">
               Home
             </Link>

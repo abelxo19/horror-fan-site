@@ -84,7 +84,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t border-gray-700 pt-8 text-center">
-          <p>&copy; 2025 Haunt. All rights reserved.</p>
+          <p>&copy; 2025 Haunt. Made with 💀 to the Horror Community.</p>
         </div>
       </div>
     </footer>
