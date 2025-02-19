@@ -23,9 +23,9 @@ export default function HorrorCTA() {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-3xl font-bold mb-4 text-white">Get Started with Your Free Trial Today</h2>
-        <p className="text-xl mb-8 text-gray-200">
-          Experience the power of our platform and transform your ideas into reality.
+        <h2 className="text-xl md:text-3xl font-bold mb-4 text-white">Join the Ultimate Horror Fan Community</h2>
+        <p className="text-base md:text-xl mb-8 text-gray-200">
+        Discover terrifying tales, rank your favorite horror films, and connect with fellow fans.
         </p>
         <Button
           size="lg"

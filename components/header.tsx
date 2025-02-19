@@ -1,4 +1,4 @@
-"use client"; // Ensures useEffect runs only on the client side
+"use client";
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
@@ -25,11 +25,11 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-30 transition-all duration-300 ${
-        scrolling ? "bg-black/80 backdrop-blur-md shadow-lg" : "bg-transparent"
+        scrolling ? "bg-black/80 backdrop-blur-md shadow-lg my-[-5px]" : "bg-transparent" 
       }`}
     >
       <div className="container mx-auto">
-        <div className="flex justify-between items-center px-4">
+        <div className="flex justify-between items-center px-4 ">
           <Link href="/">
             <Image src={Logo} alt="Logo-Image" width={70} height={70} />
           </Link>
@@ -41,7 +41,7 @@ const Header = () => {
               Features
             </Link>
             <Link href="#pricing" className="text-white hover:text-black">
-              Pricing
+              Movies
             </Link>
             <Link href="#contact" className="text-white hover:text-black">
               Contact
