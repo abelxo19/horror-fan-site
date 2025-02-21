@@ -2,13 +2,14 @@ import React from 'react';
 import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
+import { redirect } from 'next/navigation';
 
 
 const DashboardPage = async() => {
   const { getUser } = getKindeServerSession()
   const user = await getUser()
   if (!user) {
-    return <div>Please log in to access the dashboard.</div>
+    return redirect("/");
   }
   return (
     <div>
