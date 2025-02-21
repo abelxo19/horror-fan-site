@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Logo from "@/public/logo-2.png";
 import Link from "next/link";
-import { Button, buttonVariants } from "./ui/button";
+import { Button } from "./ui/button";
 import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server'
 
 const Header = async() => {
@@ -17,7 +17,7 @@ const Header = async() => {
           <Link href="/">
             <Image src={Logo} alt="Logo-Image" width={70} height={70} />
           </Link>
-          <nav className="hidden md:flex space-x-4 text-lg font-medium">  
+          <nav className="hidden md:flex space-x-4 text-lg font-medium ml-36">  
             <Link href="/" className="text-white hover:text-black">
               Home
             </Link>
@@ -34,18 +34,19 @@ const Header = async() => {
           {user ? (
               <>
                 <Link
-                  href='/api/auth/logout'
-                  className={buttonVariants({
-                    size: 'sm',
-                    variant: 'ghost',
-                  })}>
-                  Sign out
+                  href='/api/auth/logout'>
+                 <Button>Signout</Button>
                   </Link> 
                   </> ) : (
                     <>
+                    <div>
                     <Link href='/api/auth/register'>
-                    <Button size="lg" className="bg-black text-white">Get Started</Button>
+                    <Button size="lg" className="bg-black text-white mr-4">Get Started</Button>
                     </Link>
+                    <Link href='/api/auth/login'>
+                    <Button size="lg" className="bg-white text-black hover:bg-gray-300 hover:text-black">Login</Button>
+                    </Link>
+                    </div>
                     </>
                 )}
         </div>
