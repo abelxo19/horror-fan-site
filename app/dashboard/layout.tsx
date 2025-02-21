@@ -17,6 +17,7 @@ export default async function DashboardLayout({
     return (
       <div className="h-screen bg-[#0b0907] px-8">
         <Headerdash />
+        <hr className="border-[#242221]"></hr>
         <div className="flex flex-col space-y-6 mt-10">
           <div className="container grid flex-1 gap-12 md:grid-cols-[200px_1fr]">
             <aside className="hidden w-[200px] flex-col md:flex">

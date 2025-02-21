@@ -9,16 +9,16 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { CreditCard, DoorClosed, Home, Settings } from "lucide-react";
+import { Tv, DoorClosed, Home, Clapperboard,BookMarked } from "lucide-react";
 import { LogoutLink } from "@kinde-oss/kinde-auth-nextjs/components";
 
 import Link from "next/link";
 
 export const navItems = [
   { name: "Home", href: "/dashboard", icon: Home },
-  { name: "Top 10 Movies", href: "/dashboard/topmovies", icon: Settings },
-  { name: "Best Series", href: "/dashboard/bestseries", icon: CreditCard },
-  { name: "Fan Fiction", href: "/dashboard/fanfiction", icon: CreditCard },
+  { name: "Top 10 Movies", href: "/dashboard/topmovies", icon: Clapperboard },
+  { name: "Best Series", href: "/dashboard/bestseries", icon: Tv },
+  { name: "Fan Fiction", href: "/dashboard/fanfiction", icon: BookMarked },
 ];
 
 export function UserNav({

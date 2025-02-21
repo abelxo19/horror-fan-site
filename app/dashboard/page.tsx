@@ -11,7 +11,7 @@ const DashboardPage = async() => {
   }
   return (
     <div>
-      <h1 className='text-white'>Welcome to the dashboard page</h1>
+      <h1 className='text-white text-center'>Welcome to the Haunt Site</h1>
     </div>
   );
 };
