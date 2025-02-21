@@ -16,9 +16,9 @@ import Link from "next/link";
 
 export const navItems = [
   { name: "Home", href: "/dashboard", icon: Home },
-  { name: "Top 10 Movies", href: "/dashboard/settings", icon: Settings },
-  { name: "Best Series", href: "/dashboard/billing", icon: CreditCard },
-  { name: "Fan Fiction", href: "/dashboard/billing", icon: CreditCard },
+  { name: "Top 10 Movies", href: "/dashboard/topmovies", icon: Settings },
+  { name: "Best Series", href: "/dashboard/bestseries", icon: CreditCard },
+  { name: "Fan Fiction", href: "/dashboard/fanfiction", icon: CreditCard },
 ];
 
 export function UserNav({
