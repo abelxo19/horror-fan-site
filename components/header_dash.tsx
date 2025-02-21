@@ -15,7 +15,6 @@ const HeaderDash = async () => {
   const { getUser } = getKindeServerSession()
   const user = await getUser()
 
-  // Get user initials
   const initials = `${user?.given_name?.[0] || ''}${user?.family_name?.[0] || ''}`.toUpperCase() || 'U'
 
   return (
@@ -34,7 +33,7 @@ const HeaderDash = async () => {
           <DropdownMenuItem className='cursor-pointer'>
             <Link 
               href='/api/auth/logout' 
-              className='w-full text-red-600 hover:text-red-800'
+              className='w-full text-gray-600 hover:text-black'
             >
               Logout
             </Link>
