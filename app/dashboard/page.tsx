@@ -10,7 +10,7 @@ const DashboardPage = async() => {
     return redirect("/");
   }
   return (
-    <div>
+    <div className='h-screen'>
       <h1 className='text-white text-center'>Welcome to the Haunt Site</h1>
     </div>
   );
