@@ -16,6 +16,8 @@ export default function SeedDatabase() {
           releaseDate: new Date("2013-07-19"),
           director: "James Wan",
           genre: ["ghost", "horror"],
+          rating: 7.5,
+          duration :"2hr 2min",
         },
         {
           id: "movie-2",
@@ -25,6 +27,8 @@ export default function SeedDatabase() {
           releaseDate: new Date("2018-06-08"),
           director: "Ari Aster",
           genre: ["ghost", "horror"],
+          rating: 8.0,
+          duration :"2hr 7min",
         },
         {
           id: "movie-3",
@@ -34,6 +38,8 @@ export default function SeedDatabase() {
           releaseDate: new Date("2001-08-10"),
           director: "Alejandro Amenábar",
           genre: ["ghost", "horror"],
+          rating: 7.6,
+          duration :"1hr 44min",
         },
         {
           id: "movie-4",
@@ -43,6 +49,8 @@ export default function SeedDatabase() {
           releaseDate: new Date("2011-04-01"),
           director: "James Wan",
           genre: ["ghost", "horror"],
+          rating: 6.8,
+          duration :"1hr 43min",
         },
         {
           id: "movie-5",
@@ -52,6 +60,8 @@ export default function SeedDatabase() {
           releaseDate: new Date("2004-10-22"),
           director: "Takashi Shimizu",
           genre: ["ghost", "horror"],
+          rating: 5.9,
+          duration :"1hr 31min",
         },
         {
           id: "movie-6",
@@ -61,6 +71,8 @@ export default function SeedDatabase() {
           releaseDate: new Date("2012-10-12"),
           director: "Scott Derrickson",
           genre: ["ghost", "horror"],
+          rating: 7.2,
+          duration:"1hr 38min"
         },
         {
           id: "movie-7",
@@ -70,6 +82,8 @@ export default function SeedDatabase() {
           releaseDate: new Date("2002-10-18"),
           director: "Gore Verbinski",
           genre: ["ghost", "horror"],
+          rating: 6.7,
+          duration:"1hr 46min"
         },
         {
           id: "movie-8",
@@ -79,6 +93,8 @@ export default function SeedDatabase() {
           releaseDate: new Date("1982-06-04"),
           director: "Tobe Hooper",
           genre: ["ghost", "horror"],
+          rating:6.1,
+          duration:"1hr 54min"
         },
       ],
     });
@@ -95,6 +111,7 @@ export default function SeedDatabase() {
           seasons: 1,
           episodes: 10,
           genre: ["ghost", "horror"],
+          rating: 8.6,
         },
         {
           id: "series-2",
@@ -105,6 +122,7 @@ export default function SeedDatabase() {
           seasons: 12,
           episodes: 130,
           genre: ["ghost", "horror"],
+          rating: 8.1,
         },
         {
           id: "series-3",
@@ -115,6 +133,7 @@ export default function SeedDatabase() {
           seasons: 2,
           episodes: 20,
           genre: ["ghost", "horror"],
+          rating: 7.9,
         },
         {
           id: "series-4",
@@ -125,6 +144,7 @@ export default function SeedDatabase() {
           seasons: 3,
           episodes: 27,
           genre: ["ghost", "horror"],
+          rating: 8.2,
         },
         {
           id: "series-5",
@@ -135,6 +155,7 @@ export default function SeedDatabase() {
           seasons: 15,
           episodes: 327,
           genre: ["ghost", "horror"],
+          rating: 8.4,
         },
         {
           id: "series-6",
@@ -145,6 +166,7 @@ export default function SeedDatabase() {
           seasons: 2,
           episodes: 20,
           genre: ["ghost", "horror"],
+          rating: 7.5,
         },
         {
           id: "series-7",
@@ -155,6 +177,7 @@ export default function SeedDatabase() {
           seasons: 1,
           episodes: 8,
           genre: ["ghost", "horror"],
+          rating: 7.6,
         },
         {
           id: "series-8",
@@ -165,6 +188,7 @@ export default function SeedDatabase() {
           seasons: 11,
           episodes: 177,
           genre: ["ghost", "horror"],
+          rating: 8.2,
         },
       ],
     });

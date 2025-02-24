@@ -27,6 +27,8 @@ model Movie {
   releaseDate DateTime
   director    String?
   genre       String[]
+  rating      Float?
+  duration    String?
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
 }
@@ -38,6 +40,7 @@ model Series {
   releaseDate DateTime
   seasons     Int
   episodes    Int
+  rating      Float
   genre       String[]
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
