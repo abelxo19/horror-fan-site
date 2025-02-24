@@ -2,25 +2,25 @@
 
 import type React from "react"
 
-import { Skull, Users, Pen } from "lucide-react"
+import {BookMarked,Tv,Clapperboard } from "lucide-react"
 import { motion } from "framer-motion"
 import { GlitchyText } from "./glitch"
 
 const features = [
   {
-    icon: Skull,
-    title: "Explore Curated Horror",
-    description: "Dive into a collection of hand-picked, spine-chilling tales that will keep you up at night.",
+    icon: Clapperboard,
+    title: "Top 20 Horror Movies",
+    description: "Dive into a curated list of the most iconic horror films. From timeless classics to modern masterpieces.",
   },
   {
-    icon: Users,
-    title: "Join the Community",
-    description: "Connect with fellow horror enthusiasts, discuss theories, and share your favorite scares.",
+    icon: Tv,
+    title: "Discover the Best Series",
+    description: "Binge-watch the most gripping horror series that blend suspense.these shows will leave you craving the next episode.",
   },
   {
-    icon: Pen,
-    title: "Contribute Your Tales",
-    description: "Unleash your inner horror writer. Submit your own stories and terrify others.",
+    icon: BookMarked,
+    title: "immense yourself in to fiction",
+    description: "Unleash the best fan fiction also ,also Submit your own stories and terrify others.",
   },
 ]
 
