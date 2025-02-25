@@ -10,7 +10,8 @@ export default {
   theme: {
   	extend: {
 		fontFamily: {
-			nosifer: ["Nosifer", "cursive"], // Add Nosifer to Tailwind
+			nosifer: ["Nosifer", "cursive"],
+			creeper: ['Creepster', 'cursive'],
 		  },
   		colors: {
   			background: 'hsl(var(--background))',
@@ -23,10 +24,10 @@ export default {
   				DEFAULT: 'hsl(var(--popover))',
   				foreground: 'hsl(var(--popover-foreground))'
   			},
-  			primary: {
-  				DEFAULT: 'hsl(var(--primary))',
-  				foreground: 'hsl(var(--primary-foreground))'
-  			},
+			primary: {
+				DEFAULT: "#ffffff",
+				foreground: "hsl(var(--primary-foreground))",
+			},
   			secondary: {
   				DEFAULT: 'hsl(var(--secondary))',
   				foreground: 'hsl(var(--secondary-foreground))'

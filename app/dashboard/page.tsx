@@ -11,7 +11,7 @@ const DashboardPage = async() => {
   }
   return (
     <div className='h-screen'>
-      <h1 className='text-white text-center'>Welcome to the Haunt Site</h1>
+      <h1 className=' text-white text-center'>Welcome to the Haunt Hub</h1>
     </div>
   );
 };
