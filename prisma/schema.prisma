@@ -24,8 +24,9 @@ model Movie {
   id          String   @id @default(uuid())
   title       String
   description String
-  releaseDate DateTime
+  releaseDate Int
   director    String?
+  image       String?
   genre       String[]
   rating      Float?
   duration    String?
@@ -37,7 +38,7 @@ model Series {
   id          String   @id @default(uuid())
   title       String
   description String
-  releaseDate DateTime
+  releaseDate Int
   seasons     Int
   episodes    Int
   rating      Float

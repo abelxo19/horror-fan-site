@@ -9,7 +9,7 @@ import Image, { StaticImageData } from "next/image"
 
 interface MovieCardProps {
   title: string
-  year: number
+  releaseDate: number
   rating: number
   duration: string
   image: string | StaticImageData
@@ -17,7 +17,7 @@ interface MovieCardProps {
   className?: string
 }
 
-export default function MovieCard({ title, year, rating, duration, image, description, className }: MovieCardProps) {
+export default function MovieCard({ title, releaseDate, rating, duration, image, description, className }: MovieCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -30,8 +30,10 @@ export default function MovieCard({ title, year, rating, duration, image, descri
         <div className="relative aspect-[2/3] overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10" />
           <Image
-            src={image as string}
+            src={image}
             alt={title}
+            width={500}
+            height={750}
             className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
           />
           <div className="absolute inset-0 bg-black/80 opacity-0 transition-opacity duration-300 group-hover:opacity-100 z-20" />
@@ -46,7 +48,7 @@ export default function MovieCard({ title, year, rating, duration, image, descri
           <h3 className="text-xl font-semibold text-white mb-2 line-clamp-1">{title}</h3>
           <div className="flex items-center gap-4 text-sm text-zinc-400">
             <Badge variant="outline" className="border-zinc-700 text-zinc-400">
-              {year}
+              {releaseDate}
             </Badge>
             <div className="flex items-center gap-1">
               <Star className="h-4 w-4 fill-primary text-primary" />

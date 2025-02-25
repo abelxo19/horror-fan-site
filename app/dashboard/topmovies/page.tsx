@@ -20,7 +20,7 @@ export default async function TopMovies() {
             releaseDate={movie.releaseDate}
             director={movie.director || undefined}
             genre={movie.genre}
-            image={poster_1}
+            image={movie.image}
             rating={movie.rating}
             duration={movie.duration} // Example duration
           />

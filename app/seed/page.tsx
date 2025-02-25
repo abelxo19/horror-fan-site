@@ -13,7 +13,8 @@ export default function SeedDatabase() {
           title: "The Conjuring",
           description:
             "Paranormal investigators Ed and Lorraine Warren work to help a family terrorized by a dark presence in their farmhouse.",
-          releaseDate: new Date("2013-07-19"),
+          releaseDate: 2013,
+          image: "/conjuring.png",
           director: "James Wan",
           genre: ["ghost", "horror"],
           rating: 7.5,
@@ -24,7 +25,8 @@ export default function SeedDatabase() {
           title: "Hereditary",
           description:
             "A grieving family is haunted by tragic and disturbing occurrences.",
-          releaseDate: new Date("2018-06-08"),
+          releaseDate: 2018,
+          image: "/hereditary.jpg",
           director: "Ari Aster",
           genre: ["ghost", "horror"],
           rating: 8.0,
@@ -35,7 +37,8 @@ export default function SeedDatabase() {
           title: "The Others",
           description:
             "A woman who lives in a darkened old house with her two photosensitive children becomes convinced that the home is haunted.",
-          releaseDate: new Date("2001-08-10"),
+          releaseDate: 2001,
+          image: "/others.jpg",
           director: "Alejandro Amenábar",
           genre: ["ghost", "horror"],
           rating: 7.6,
@@ -46,7 +49,8 @@ export default function SeedDatabase() {
           title: "Insidious",
           description:
             "A family looks to prevent evil spirits from trapping their comatose child in a realm called The Further.",
-          releaseDate: new Date("2011-04-01"),
+          releaseDate: 2011,
+          image: "/insidious.jpg",
           director: "James Wan",
           genre: ["ghost", "horror"],
           rating: 6.8,
@@ -57,7 +61,8 @@ export default function SeedDatabase() {
           title: "The Grudge",
           description:
             "An American nurse living and working in Tokyo is exposed to a mysterious supernatural curse.",
-          releaseDate: new Date("2004-10-22"),
+          releaseDate: 2004,
+          image: "/grudge.jpg",
           director: "Takashi Shimizu",
           genre: ["ghost", "horror"],
           rating: 5.9,
@@ -68,7 +73,8 @@ export default function SeedDatabase() {
           title: "Sinister",
           description:
             "A true-crime writer discovers a box of super 8 home movies that suggest the murder he is currently researching is the work of a serial killer.",
-          releaseDate: new Date("2012-10-12"),
+          releaseDate: 2012,
+          image:"/sinster.jpg",
           director: "Scott Derrickson",
           genre: ["ghost", "horror"],
           rating: 7.2,
@@ -79,7 +85,8 @@ export default function SeedDatabase() {
           title: "The Ring",
           description:
             "A journalist must investigate a mysterious videotape which seems to cause the death of anyone one week to the day after they view it.",
-          releaseDate: new Date("2002-10-18"),
+          releaseDate: 2002,
+          image: "/ring.jpg",
           director: "Gore Verbinski",
           genre: ["ghost", "horror"],
           rating: 6.7,
@@ -90,7 +97,8 @@ export default function SeedDatabase() {
           title: "Poltergeist",
           description:
             "A family's home is haunted by a host of ghosts and otherworldly forces.",
-          releaseDate: new Date("1982-06-04"),
+          releaseDate: 1982,
+          image: "/poltergeist.jpg",
           director: "Tobe Hooper",
           genre: ["ghost", "horror"],
           rating:6.1,
@@ -107,7 +115,7 @@ export default function SeedDatabase() {
           title: "The Haunting of Hill House",
           description:
             "A family confronts haunting memories of their old home and the terrifying events that drove them from it.",
-          releaseDate: new Date("2018-10-12"),
+          releaseDate: 2018,
           seasons: 1,
           episodes: 10,
           genre: ["ghost", "horror"],
@@ -118,7 +126,7 @@ export default function SeedDatabase() {
           title: "American Horror Story",
           description:
             "An anthology series centering on different characters and locations, including a house with a murderous past, an insane asylum, a witch coven, a freak show, a hotel, and a farmhouse in Roanoke.",
-          releaseDate: new Date("2011-10-05"),
+          releaseDate: 2011,
           seasons: 12,
           episodes: 130,
           genre: ["ghost", "horror"],
@@ -129,7 +137,7 @@ export default function SeedDatabase() {
           title: "The Terror",
           description:
             "A chilling anthology series featuring stories of people facing terrifying and often supernatural forces.",
-          releaseDate: new Date("2018-03-26"),
+          releaseDate: 2018,
           seasons: 2,
           episodes: 20,
           genre: ["ghost", "horror"],
@@ -140,7 +148,7 @@ export default function SeedDatabase() {
           title: "Penny Dreadful",
           description:
             "Explorer Sir Malcolm Murray, American gunslinger Ethan Chandler, and medium Vanessa Ives unite to combat supernatural threats in Victorian London.",
-          releaseDate: new Date("2014-05-11"),
+          releaseDate: 2014,
           seasons: 3,
           episodes: 27,
           genre: ["ghost", "horror"],
@@ -151,7 +159,7 @@ export default function SeedDatabase() {
           title: "Supernatural",
           description:
             "Two brothers follow their father's footsteps as hunters, fighting evil supernatural beings of many kinds, including monsters, demons, and ghosts.",
-          releaseDate: new Date("2005-09-13"),
+          releaseDate: 2005,
           seasons: 15,
           episodes: 327,
           genre: ["ghost", "horror"],
@@ -162,7 +170,7 @@ export default function SeedDatabase() {
           title: "The Exorcist",
           description:
             "Two priests perform an exorcism on a young woman possessed by a demonic entity.",
-          releaseDate: new Date("2016-09-23"),
+          releaseDate: 2016,
           seasons: 2,
           episodes: 20,
           genre: ["ghost", "horror"],
@@ -173,7 +181,7 @@ export default function SeedDatabase() {
           title: "Marianne",
           description:
             "A famous horror writer returns to her hometown and discovers that the evil spirit plaguing her dreams is also haunting her in real life.",
-          releaseDate: new Date("2019-09-13"),
+          releaseDate: 2019,
           seasons: 1,
           episodes: 8,
           genre: ["ghost", "horror"],
@@ -184,7 +192,7 @@ export default function SeedDatabase() {
           title: "The Walking Dead",
           description:
             "Sheriff Deputy Rick Grimes wakes up from a coma to learn the world is in ruins and must lead a group of survivors to stay alive.",
-          releaseDate: new Date("2010-10-31"),
+          releaseDate: 2010,
           seasons: 11,
           episodes: 177,
           genre: ["ghost", "horror"],
