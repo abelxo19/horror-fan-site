@@ -1,6 +1,7 @@
 import React from "react";
 import prisma from "@/lib/prisma";
 import MovieCard from "@/components/moviecard";
+import poster_1 from "@/public/conjuring.png";
 
 export default async function TopMovies() {
   
@@ -19,7 +20,7 @@ export default async function TopMovies() {
             releaseDate={movie.releaseDate}
             director={movie.director || undefined}
             genre={movie.genre}
-            image={movie.imageString || undefined}
+            image={poster_1}
             rating={movie.rating}
             duration={movie.duration} // Example duration
           />

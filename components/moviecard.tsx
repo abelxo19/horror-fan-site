@@ -5,13 +5,14 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Clock, Star } from "lucide-react"
 import { motion } from "framer-motion"
 import { cn } from "@/lib/utils"
+import Image, { StaticImageData } from "next/image"
 
 interface MovieCardProps {
   title: string
   year: number
   rating: number
   duration: string
-  image: string
+  image: string | StaticImageData
   description: string
   className?: string
 }
@@ -28,8 +29,8 @@ export default function MovieCard({ title, year, rating, duration, image, descri
       <Card className="relative overflow-hidden border-zinc-800 bg-black/40 transition-all duration-300 group-hover:border-zinc-700">
         <div className="relative aspect-[2/3] overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10" />
-          <img
-            src={image || "/placeholder.svg"}
+          <Image
+            src={image as string}
             alt={title}
             className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
           />
