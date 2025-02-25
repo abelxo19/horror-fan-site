@@ -19,6 +19,7 @@ export default function SeedDatabase() {
           genre: ["ghost", "horror"],
           rating: 7.5,
           duration :"2hr 2min",
+          thriller: "https://www.youtube.com/watch?v=k10ETZ41q5o",
         },
         {
           id: "movie-2",
@@ -31,6 +32,7 @@ export default function SeedDatabase() {
           genre: ["ghost", "horror"],
           rating: 8.0,
           duration :"2hr 7min",
+          thriller: "https://www.youtube.com/watch?v=V6wWKNij_1M",
         },
         {
           id: "movie-3",
@@ -43,6 +45,7 @@ export default function SeedDatabase() {
           genre: ["ghost", "horror"],
           rating: 7.6,
           duration :"1hr 44min",
+          thriller: "https://www.youtube.com/watch?v=Vu494-Dr5po",
         },
         {
           id: "movie-4",
@@ -55,6 +58,7 @@ export default function SeedDatabase() {
           genre: ["ghost", "horror"],
           rating: 6.8,
           duration :"1hr 43min",
+          thriller: "https://www.youtube.com/watch?v=zuZnRUcoWos",
         },
         {
           id: "movie-5",
@@ -67,6 +71,7 @@ export default function SeedDatabase() {
           genre: ["ghost", "horror"],
           rating: 5.9,
           duration :"1hr 31min",
+          thriller: "https://www.youtube.com/watch?v=O2NKzO-fxwQ",
         },
         {
           id: "movie-6",
@@ -78,7 +83,8 @@ export default function SeedDatabase() {
           director: "Scott Derrickson",
           genre: ["ghost", "horror"],
           rating: 7.2,
-          duration:"1hr 38min"
+          duration:"1hr 38min",
+          thriller: "https://www.youtube.com/watch?v=pgYxydrVlDk"
         },
         {
           id: "movie-7",
@@ -90,7 +96,8 @@ export default function SeedDatabase() {
           director: "Gore Verbinski",
           genre: ["ghost", "horror"],
           rating: 6.7,
-          duration:"1hr 46min"
+          duration:"1hr 46min",
+          thriller:"https://www.youtube.com/watch?v=ymPUAsPsTwg"
         },
         {
           id: "movie-8",
@@ -102,7 +109,8 @@ export default function SeedDatabase() {
           director: "Tobe Hooper",
           genre: ["ghost", "horror"],
           rating:6.1,
-          duration:"1hr 54min"
+          duration:"1hr 54min",
+          thriller:"https://www.youtube.com/watch?v=9eZgEKjYJqA"
         },
       ],
     });

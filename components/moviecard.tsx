@@ -6,6 +6,7 @@ import { Clock, Star } from "lucide-react"
 import { motion } from "framer-motion"
 import { cn } from "@/lib/utils"
 import Image, { StaticImageData } from "next/image"
+import Link from "next/link"
 
 interface MovieCardProps {
   title: string
@@ -13,12 +14,14 @@ interface MovieCardProps {
   rating: number
   duration: string
   image: string | StaticImageData
+  thriller: string
   description: string
   className?: string
 }
 
-export default function MovieCard({ title, releaseDate, rating, duration, image, description, className }: MovieCardProps) {
+export default function MovieCard({ title, releaseDate, rating, duration, image, thriller, description, className }: MovieCardProps) {
   return (
+    <Link href={thriller} className="block w-full">
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
@@ -71,6 +74,7 @@ export default function MovieCard({ title, releaseDate, rating, duration, image,
         </CardFooter>
       </Card>
     </motion.div>
+    </Link>
   )
 }
 
