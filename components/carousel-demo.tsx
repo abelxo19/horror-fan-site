@@ -27,7 +27,7 @@ export function CarouselDemo() {
                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                     />
                     {/* Dark overlay effect when hovered */}
-                    <div className="absolute inset-0  bg-opacity-40 transition-opacity duration-300 group-hover:bg-opacity-60"></div>
+                    <div className="absolute inset-0 bg-black bg-opacity-10 transition-opacity duration-300 group-hover:bg-opacity-60"></div>
                   </div>
 
                   {/* Movie Title Overlay */}
