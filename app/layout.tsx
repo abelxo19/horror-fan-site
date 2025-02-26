@@ -13,6 +13,8 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Haunt",
   description: "horror website to horror fans",
+  icons: "/favicon.png",
+  
 };
 
 export default function RootLayout({
