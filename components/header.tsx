@@ -32,7 +32,7 @@ const Header = async() => {
           {!user ? (
             <div>
               <Link href='/api/auth/register'>
-                <Button size="lg" className="bg-black text-white mr-4">Get Started</Button>
+                <Button size="lg" className="bg-black text-white mr-4 hover:bg-[#232e44]">Get Started</Button>
               </Link>
               <Link href='/api/auth/login'>
                 <Button size="lg" className="bg-white text-black hover:bg-gray-300 hover:text-black">Login</Button>

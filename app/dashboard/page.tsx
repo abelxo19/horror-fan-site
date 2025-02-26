@@ -41,7 +41,7 @@ const DashboardPage = async() => {
               </Link>
             </CardContent>
           </Card>
-          <div>
+          <div className='mx-auto'>
             <p className='text-white ml-20 py-2 text-lg font-semibold flex'>Latest Releases <span className='inline px-2 text-gray-400 hover:fill-white hover:text-white'><Clapperboard /></span></p>
            <CarouselDemo />
           </div>

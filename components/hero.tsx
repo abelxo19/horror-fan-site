@@ -41,7 +41,7 @@ export default function Hero() {
               A hub for horror fans, by horror fans. <br />Browse and share your favorite horror movies and
               fiction with a community.
             </p>
-            <Button size="lg" className="bg-black text-white">
+            <Button size="lg" className="bg-black text-white hover:bg-[#232e44]">
             Join the Nightmare
             </Button>
           </motion.div>
