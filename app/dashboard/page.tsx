@@ -21,7 +21,7 @@ const DashboardPage = async() => {
          <Card className="bg-transparent border-transparent pt-11">
             <CardHeader className="space-y-1">
               <CardTitle className="flex items-center gap-2 text-xl text-white">
-                <BrandTelegram className="h-5 w-5 text-gray-400" />
+                <BrandTelegram className="h-5 w-5 text-gray-400 hover:fill-white hover:text-white" />
                 Join Our Coven
               </CardTitle>
             </CardHeader>
@@ -35,7 +35,7 @@ const DashboardPage = async() => {
             </CardContent>
           </Card>
           <div>
-            <p className='text-white ml-24 py-2 text-lg font-semibold flex'>Latest Releases <span className='inline px-2 text-gray-400'><Clapperboard /></span></p>
+            <p className='text-white ml-20 py-2 text-lg font-semibold flex'>Latest Releases <span className='inline px-2 text-gray-400 hover:fill-white hover:text-white'><Clapperboard /></span></p>
            <CarouselDemo />
           </div>
         </div>
