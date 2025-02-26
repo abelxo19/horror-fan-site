@@ -1,9 +1,10 @@
 import React from 'react';
 import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server'
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { BellIcon as BrandTelegram, Ghost, VideoIcon as Movie, Skull } from 'lucide-react'
+import { BellIcon as BrandTelegram, Car, Ghost, VideoIcon as Movie, Skull } from 'lucide-react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button';
+import { CarouselDemo} from '@/components/carousel-demo';
 import { redirect } from 'next/navigation';
 
 
@@ -16,8 +17,8 @@ const DashboardPage = async() => {
   return (
     <div className='min-h-screen overflow-hidden'>
       <p className='text-4xl font-creeper text-white text-center pb-14'>Welcome to the Haunt Hub</p>
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-4 shadow-md'>      
-         <Card className="bg-transparent border-transparent">
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-10 shadow-md'>      
+         <Card className="bg-transparent border-transparent pt-11">
             <CardHeader className="space-y-1">
               <CardTitle className="flex items-center gap-2 text-xl text-white">
                 <BrandTelegram className="h-5 w-5 text-white" />
@@ -34,7 +35,8 @@ const DashboardPage = async() => {
             </CardContent>
           </Card>
           <div>
-           <p className='text-white'></p>
+            <p className='text-white ml-24 py-2 text-lg font-semibold'>Latest Releases</p>
+           <CarouselDemo />
           </div>
         </div>
     </div>
