@@ -31,7 +31,7 @@ export function CarouselDemo() {
                   </div>
 
                   {/* Movie Title Overlay */}
-                  <div className="absolute bottom-0 left-0 w-full font-semibold text-white text-center text-lg p-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                  <div className="absolute bottom-0 left-0 w-full font-medium font-creeper text-white text-center text-lg p-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                     {movie.title}
                   </div>
                 </CardContent>
