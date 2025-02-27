@@ -8,7 +8,7 @@ export default async function TopSeries() {
 
   return (
     <div className="">
-      <h1 className="font-creeper text-3xl font-bold mb-4 text-white text-center">Top Horror Series</h1>
+      <h1 className="text-3xl font-bold mb-4 text-white text-center font-creeper">Top Horror Series</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {series.map((serie) => (
           <SeriesCard
