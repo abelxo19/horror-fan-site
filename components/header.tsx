@@ -21,18 +21,27 @@ const Header = async() => {
             <Image src={Logo} alt="Logo-Image" width={70} height={70} />
           </Link>
 
-          <nav className="hidden md:flex space-x-4 text-lg font-medium ml-36">
-            <Link href="/" className="text-white hover:text-black">Home</Link>
-            <Link href="#features" className="text-white hover:text-black">Features</Link>
-            <Link href="#pricing" className="text-white hover:text-black">Movies</Link>
-            <Link href="#contact" className="text-white hover:text-black">Contact</Link>
-          </nav>
+          <div className="hidden md:flex items-center ml-36 ">
+            <nav className="bg-[#232e44] text-base rounded-full px-8 py-3 flex items-center space-x-6 border border-gray-800">
+              <Link href="/" className="text-white hover:text-gray-300 text-sm font-medium transition-colors">
+                Home
+              </Link>
+              <Link href="#features" className="text-white hover:text-gray-300 text-sm font-medium transition-colors">
+                Features
+              </Link>
+              <Link href="#pricing" className="text-white hover:text-gray-300 text-sm font-medium transition-colors">
+                Movies
+              </Link>
+              <Link href="#contact" className="text-white hover:text-gray-300 text-sm font-medium transition-colors">
+                Contact
+              </Link>
+            </nav>
+          </div>  
 
-          {/* Show Get Started and Login buttons only if no user exists */}
           {!user ? (
-            <div className="flex flex-row space-x-2 px-5">
+            <div className="flex flex-row space-x-2">
               <Link href='/api/auth/register'>
-                <Button size="lg" className="bg-black text-white md:mr-4 hover:bg-[#232e44]">Get Started</Button>
+                <Button size="lg" className="bg-black text-white md:mr-3 hover:bg-[#232e44]">Get Started</Button>
               </Link>
               <Link href='/api/auth/login'>
                 <Button size="lg" className="bg-white text-black hover:bg-gray-300 hover:text-black">Login</Button>
