@@ -30,9 +30,9 @@ const Header = async() => {
 
           {/* Show Get Started and Login buttons only if no user exists */}
           {!user ? (
-            <div>
+            <div className="flex flex-row space-x-2 px-5">
               <Link href='/api/auth/register'>
-                <Button size="lg" className="bg-black text-white mr-4 hover:bg-[#232e44]">Get Started</Button>
+                <Button size="lg" className="bg-black text-white md:mr-4 hover:bg-[#232e44]">Get Started</Button>
               </Link>
               <Link href='/api/auth/login'>
                 <Button size="lg" className="bg-white text-black hover:bg-gray-300 hover:text-black">Login</Button>
