@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 import { inter } from "@/fonts"
-
+import Link from "next/link"
 
 
 export default function Hero() {
@@ -41,9 +41,11 @@ export default function Hero() {
               A hub for horror fans, by horror fans. <br />Browse and share your favorite horror movies and
               fiction with a community.
             </p>
+            <Link href='/api/auth/register'>
             <Button size="lg" className="bg-black text-white hover:bg-[#232e44]">
             Join the Nightmare
             </Button>
+            </Link>
           </motion.div>
         </div>
       </div>
