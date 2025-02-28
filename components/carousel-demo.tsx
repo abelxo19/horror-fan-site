@@ -36,7 +36,7 @@ export function CarouselDemo() {
                   <div className="absolute bottom-0 left-0 w-full text-center p-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                     <Link
                       href={movie.link}
-                      className="inline-block bg-[#252321] hover:bg-white hover:text-black text-white text-sm font-medium py-2 px-3 rounded-md transition-colors duration-200"
+                      className="inline-block hover:bg-[#252321] bg-white hover:text-white text-black text-sm font-medium py-2 px-3 rounded-md transition-colors duration-200"
                     >
                       Watch Thriller
                     </Link>
