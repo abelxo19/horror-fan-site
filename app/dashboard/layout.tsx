@@ -29,14 +29,14 @@ export default async function DashboardLayout({
       {/* Content area with fixed sidebar and scrollable main */}
       <div className="flex flex-1 pt-[calc(64px+1rem)]">
         {/* Fixed sidebar - adjust the width as needed */}
-        <aside className="fixed hidden md:block h-[calc(100vh-64px)] w-[250px] overflow-y-auto bg-[#0b0907]">
+        <aside className="fixed hidden md:block h-[calc(100vh-64px)] w-[230px] overflow-y-auto bg-[#0b0907]">
           <div className="px-8 py-6">
             <DashboardNav />
           </div>
         </aside>
 
         {/* Main content - scrollable */}
-        <main className="flex-1 overflow-y-auto md:ml-[200px] px-8 pb-8">{children}</main>
+        <main className="flex-1 overflow-y-auto md:ml-[200px] px-4 pb-8">{children}</main>
       </div>
     </div>
   )

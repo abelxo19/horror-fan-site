@@ -30,7 +30,7 @@ export default function MovieCard({ title, releaseDate, rating, duration, image,
       className={cn("group relative w-full max-w-sm", className)}
     >
       <Card className="relative overflow-hidden border-zinc-800 bg-black/40 transition-all duration-300 group-hover:border-zinc-700">
-        <div className="relative aspect-[2/3] overflow-hidden">
+        <div className="relative aspect-[1] overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10" />
           <Image
             src={image}
