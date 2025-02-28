@@ -3,7 +3,8 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import cta_bg from '@/public/cta-bg.jpg'
-import { GitlabIcon as GitHub } from "lucide-react"
+import Tele from '@/public/telegram.png'
+import Link from "next/link"
 import { motion } from "framer-motion"
 
 export default function HorrorCTA() {
@@ -29,17 +30,20 @@ export default function HorrorCTA() {
         transition={{ duration: 1, ease: "easeOut" }}
         className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center"
       >
-        <h2 className="text-xl md:text-3xl font-bold mb-4 text-white">Join the Ultimate Horror Fan Community</h2>
+        <h2 className="text-xl md:text-3xl font-bold mb-4 text-white">Join Our Telegram Channel</h2>
         <p className="text-base md:text-xl mb-8 text-gray-200">
-          Discover terrifying tales, rank your favorite horror films, and connect with fellow fans.
+        Explore the best horror movies, thrilling series, and chilling fan fiction also connect with fellow fans.
         </p>
+        <Link href="https://t.me/HorrorMovies_Hub">
         <Button
           size="lg"
           variant="secondary"
           className="bg-white text-[#232e44] hover:bg-gray-100 transition-colors duration-300"
         >
-          Explore the Darkness
+          Join The Channel <span className="inline-block">
+            <Image src={Tele} alt="telegram" className="w-6 h-6"></Image></span>
         </Button>
+        </Link>
       </motion.div>
     </section>
   )
