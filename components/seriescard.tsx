@@ -28,7 +28,7 @@ export default function SeriesCard({ title, releaseDate, seasons, episodes, rati
       whileHover={{ scale: 1.02 }}
       className={cn("group relative w-full max-w-sm", className)}
     >
-      <Card className="relative overflow-hidden border-zinc-800 bg-black/40 transition-all duration-300 group-hover:border-zinc-700 h-3/5">
+      <Card className="relative overflow-hidden border-zinc-800 bg-black/40 transition-all duration-300 group-hover:border-zinc-700">
         <div className="relative aspect-[2/3] overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10" />
           <Image
