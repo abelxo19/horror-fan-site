@@ -31,16 +31,12 @@ export function CarouselDemo() {
                     <div className="absolute inset-0 bg-black bg-opacity-10 transition-opacity duration-300 group-hover:bg-opacity-60"></div>
                   </div>
 
-                  {/* Movie Title Overlay */}
-                  <div className="absolute bottom-10 left-0 w-full font-medium font-creeper text-white text-center text-lg p-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                    {movie.title}
-                  </div>
 
                   {/* Watch Thriller Link */}
                   <div className="absolute bottom-0 left-0 w-full text-center p-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                     <Link
                       href={movie.link}
-                      className="inline-block bg-[#252321] hover:bg-white hover:text-black text-white text-sm font-medium py-1 px-3 rounded-md transition-colors duration-200"
+                      className="inline-block bg-[#252321] hover:bg-white hover:text-black text-white text-sm font-medium py-2 px-3 rounded-md transition-colors duration-200"
                     >
                       Watch Thriller
                     </Link>
