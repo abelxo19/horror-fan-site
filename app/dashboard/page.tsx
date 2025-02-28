@@ -1,7 +1,7 @@
 import React from 'react';
 import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server'
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { BellIcon as BrandTelegram, Car, Ghost, VideoIcon as Movie, Skull, Clapperboard } from 'lucide-react'
+import { BellIcon as BrandTelegram, Clapperboard } from 'lucide-react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button';
 import { CarouselDemo} from '@/components/carousel-demo';

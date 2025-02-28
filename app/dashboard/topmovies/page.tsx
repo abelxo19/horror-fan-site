@@ -8,7 +8,14 @@ export default async function TopMovies() {
 
   return (
     <div className="">
-      <h1 className="font-creeper text-3xl font-bold mb-4 text-white text-center">Top Horror Movies</h1>
+      <h1 className="font-creeper text-3xl font-bold mb-4 text-white text-center">Top Horror <span
+          style={{
+            color: "transparent",
+            WebkitTextStroke: "1px white",
+          }}
+        >
+          Movies
+        </span>{" "}</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {movies.map((movie) => (
           <MovieCard
