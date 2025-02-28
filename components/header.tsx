@@ -14,7 +14,7 @@ const Header = async() => {
   }
 
   return (
-    <header className="fixed top-0 left-0 w-full z-30 transition-all duration-300 backdrop-blur-sm mt-[-5px]">
+    <header className="fixed top-0 left-0 w-full z-30 transition-all duration-300 mt-[-5px]">
       <div className="container mx-auto">
         <div className="flex justify-between items-center px-4">
           <Link href="/">
