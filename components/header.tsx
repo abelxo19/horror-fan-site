@@ -21,8 +21,8 @@ const Header = async() => {
             <Image src={Logo} alt="Logo-Image" width={70} height={70} />
           </Link>
 
-          <div className="hidden md:flex items-center ml-36 ">
-            <nav className="bg-[#232e44] text-base rounded-full px-8 py-3 flex items-center space-x-6 border border-gray-800">
+          <div className="hidden md:flex items-center ml-44 ">
+            <nav className="bg-[#232e44] text-base rounded-full px-8 py-3 flex items-center space-x-8 border border-gray-800">
               <Link href="/" className="text-white hover:text-gray-300 text-sm font-medium transition-colors">
                 Home
               </Link>

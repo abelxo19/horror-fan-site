@@ -4,9 +4,9 @@ import Image from "next/image"
 import Link from "next/link"
 
 const movies = [
-  { title: "Wolf Man", poster: "/wolf.jpg",link:'https://www.youtube.com/watch?v=kAw4PH2IQgo' },
-  { title: "The Monkey", poster: "/monkey.jpg",link:'https://www.youtube.com/watch?v=husMGbXEIho' },
-  { title: "Nosferatu", poster: "/Nosferatu.jpg",link:'https://www.youtube.com/watch?v=nulvWqYUM8k' },
+  { title: "Wolf Man", poster: "/wolf.jpg", link: 'https://www.youtube.com/watch?v=kAw4PH2IQgo' },
+  { title: "The Monkey", poster: "/monkey.jpg", link: 'https://www.youtube.com/watch?v=husMGbXEIho' },
+  { title: "Nosferatu", poster: "/Nosferatu.jpg", link: 'https://www.youtube.com/watch?v=nulvWqYUM8k' },
 ]
 
 export function CarouselDemo() {
@@ -16,10 +16,10 @@ export function CarouselDemo() {
         {movies.map((movie, index) => (
           <CarouselItem key={index}>
             <div className="p-1 group">
-              <Card className="relative overflow-hidden">
+              <Card className="relative overflow-hidden border border-black rounded-lg shadow-xl transition-shadow duration-300 hover:shadow-2xl">
                 <CardContent className="p-0">
                   {/* Image container with scaling effect */}
-                  <div className="relative w-full h-72 overflow-hidden">
+                  <div className="relative w-full h-72 overflow-hidden rounded-t-lg">
                     <Image
                       src={movie.poster || "/placeholder.svg"}
                       alt={`${movie.title} poster`}
@@ -31,12 +31,11 @@ export function CarouselDemo() {
                     <div className="absolute inset-0 bg-black bg-opacity-10 transition-opacity duration-300 group-hover:bg-opacity-60"></div>
                   </div>
 
-
                   {/* Watch Thriller Link */}
                   <div className="absolute bottom-0 left-0 w-full text-center p-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                     <Link
                       href={movie.link}
-                      className="inline-block hover:bg-[#252321] bg-white hover:text-white text-black text-sm font-medium py-2 px-3 rounded-md transition-colors duration-200"
+                      className="inline-block bg-white hover:text-white hover:bg-[#232e44] text-black text-sm font-medium py-2 px-3 rounded-md transition-colors duration-200"
                     >
                       Watch Thriller
                     </Link>
@@ -47,9 +46,8 @@ export function CarouselDemo() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      <CarouselPrevious className="mt-44 ml-[170px]" />
+      <CarouselNext className="mt-44 mr-[170px]" />
     </Carousel>
   )
 }
-
