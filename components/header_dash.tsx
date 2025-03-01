@@ -37,7 +37,9 @@ const HeaderDash = async () => {
             >
               Logout
             </Link>
-            <Link href='/dashboard/watchlist' className='w-full text-gray-600 hover:text-black'>
+          </DropdownMenuItem>
+          <DropdownMenuItem className='cursor-pointer'>
+          <Link href='/dashboard/watchlist' className='w-full text-gray-600 hover:text-black'>
             Watchlist
             </Link>
           </DropdownMenuItem>
