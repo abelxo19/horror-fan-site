@@ -31,7 +31,7 @@ export default function Features() {
         <h2 className="text-3xl font-bold text-center mb-8">
           Discover the <GlitchyText>Darkness</GlitchyText>
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
           {features.map((feature, index) => (
             <FeatureCard key={index} {...feature} index={index} />
           ))}
@@ -55,7 +55,7 @@ function FeatureCard({ icon: Icon, title, description, index }: FeatureCardProps
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.2 }}
       whileHover={{ scale: 1.05 }}
-      className="flex flex-col items-center text-center p-6 bg-gray-800 rounded-lg"
+      className="flex flex-col items-center text-center p-8 bg-gray-800 rounded-lg"
     >
       <motion.div
         whileHover={{ rotate: 360 }}
