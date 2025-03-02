@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server'
 import { redirect } from "next/navigation"; 
+import HorrorAudio from "@/components/audio";
 
 const Header = async() => {
   
@@ -46,6 +47,7 @@ const Header = async() => {
               <Link href='/api/auth/login'>
                 <Button size="lg" className="bg-white text-black hover:bg-gray-300 hover:text-black">Login</Button>
               </Link>
+              <HorrorAudio/>
             </div>
           ) : (
             <Link href="/dashboard">
