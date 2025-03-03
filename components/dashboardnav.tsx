@@ -20,7 +20,7 @@ export function DashboardNav() {
           >
             <item.icon className="mr-2 h-4 w-4 text-gray-400" />
             <span>{item.name}</span>
-          </span>
+      ``    </span>
         </Link>
       ))}
     </nav>

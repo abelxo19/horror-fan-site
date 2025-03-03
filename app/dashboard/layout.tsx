@@ -1,8 +1,8 @@
 import type { ReactNode } from "react"
-import { DashboardNav } from "@/components/dashboardnav"
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server"
 import { redirect } from "next/navigation"
 import Headerdash from "@/components/header_dash"
+import { Sidebar } from "@/components/sidebar"
 
 export default async function DashboardLayout({
   children,
@@ -26,17 +26,15 @@ export default async function DashboardLayout({
         <hr className="border-[#242221]" />
       </div>
 
-      {/* Content area with fixed sidebar and scrollable main */}
+      {/* Content area with responsive sidebar and scrollable main */}
       <div className="flex flex-1 pt-[calc(64px+1rem)]">
-        {/* Fixed sidebar - adjust the width as needed */}
-        <aside className="fixed hidden md:block h-[calc(100vh-64px)] w-[230px] overflow-y-auto bg-[#0b0907]">
-          <div className="px-8 py-6">
-            <DashboardNav />
-          </div>
-        </aside>
+        {/* Sidebar - now responsive */}
+        <Sidebar />
 
-        {/* Main content - scrollable */}
-        <main className="flex-1 overflow-y-auto md:ml-[200px] px-4 pb-8">{children}</main>
+        {/* Main content - scrollable with responsive margin */}
+        <main className="flex-1 overflow-y-auto md:ml-[230px] ml-[60px] px-4 pb-8 transition-all duration-300">
+          {children}
+        </main>
       </div>
     </div>
   )
