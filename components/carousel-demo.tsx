@@ -46,8 +46,8 @@ export function CarouselDemo() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious className="mt-44 ml-[170px]" />
-      <CarouselNext className="mt-44 mr-[170px]" />
+      <CarouselPrevious className="md:mt-44 md:ml-[170px]" />
+      <CarouselNext className="md:mt-44 md:mr-[170px]" />
     </Carousel>
   )
 }

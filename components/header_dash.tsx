@@ -25,7 +25,7 @@ const HeaderDash = async () => {
       
       <DropdownMenu>
         <DropdownMenuTrigger className='focus:outline-none'>
-          <Avatar className='cursor-pointer'>
+          <Avatar className='cursor-pointer '>
             <AvatarFallback>{initials}</AvatarFallback>
           </Avatar>
         </DropdownMenuTrigger>
