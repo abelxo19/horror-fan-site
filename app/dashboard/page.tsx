@@ -26,7 +26,7 @@ const DashboardPage = async() => {
           Hub
         </span>{" "}</p>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-20 shadow-md'>      
-         <Card className="bg-transparent border-transparent md:pt-11 w-[450px] space-y-1">
+         <Card className="bg-transparent border-transparent max-sm:-ml-5 md:pt-11 w-[450px] space-y-1">
             <CardHeader className="">
               <CardTitle className="flex items-center gap-2 text-xl text-white">
                 <BrandTelegram className="h-5 w-5 text-gray-400 hover:fill-white hover:text-white" />
@@ -34,7 +34,7 @@ const DashboardPage = async() => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="mb-6 text-sm text-gray-400">Get exclusive horror content and movie recommendations on our Telegram channel</p>
+              <p className="mb-6 text-xs md:text-sm text-gray-400 max-sm:w-64">Get exclusive horror content and movie recommendations on our Telegram channel</p>
               <Link href="https://t.me/HorrorMovies_Hub" passHref>
               <Button variant="outline" className="w-2/4 text-center  md:w-full  hover:bg-gray-300 hover:text-black">
                 Join Telegram Channel
@@ -43,7 +43,7 @@ const DashboardPage = async() => {
             </CardContent>
           </Card>
           <div className='mx-auto'>
-            <p className='text-white ml-20 py-2 text-lg font-semibold flex'>Latest Releases <span className='inline px-2 text-gray-400 hover:fill-white hover:text-white'><Clapperboard /></span></p>
+            <p className='text-white ml-4 md:ml-20 py-2 text-base md:text-lg font-semibold flex'>Latest Releases <span className='inline px-2 text-gray-400 hover:fill-white hover:text-white'><Clapperboard /></span></p>
            <CarouselDemo />
           </div>
         </div>

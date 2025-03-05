@@ -11,13 +11,13 @@ const FictionPage = () => {
           <Sparkles className="ml-2 h-6 w-6 text-amber-300" />
         </div>
 
-        <h1 className="py-2 animate-pulse bg-gradient-to-r from-purple-400 via-pink-500 to-amber-400 bg-clip-text text-4xl font-extrabold text-transparent sm:text-6xl md:text-7xl">
+        <h1 className="py-2 animate-pulse bg-gradient-to-r from-purple-400 via-pink-500 to-amber-400 bg-clip-text text-2xl font-extrabold text-transparent sm:text-5xl md:text-6xl">
           Coming Soon
         </h1>
 
         <div className="mt-4 h-1 w-24 animate-pulse rounded bg-gradient-to-r from-purple-400 via-pink-500 to-amber-400"></div>
 
-        <p className="mt-6 text-lg text-gray-300 sm:text-xl">
+        <p className="mt-6 text-base text-gray-300 sm:text-xl">
           Our fanfiction feature is currently under development. Soon you&apos;ll be able to explore, create, and share
           amazing stories with the community.
         </p>
