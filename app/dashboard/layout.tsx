@@ -32,7 +32,7 @@ export default async function DashboardLayout({
         <Sidebar />
 
        
-        <main className="flex-1 overflow-y-auto md:ml-[230px] ml-[60px]  pb-8 transition-all duration-300">
+        <main className="flex-1 overflow-y-auto md:ml-[230px] ml-[50px]  pb-8 transition-all duration-300">
           {children}
         </main>
       </div>

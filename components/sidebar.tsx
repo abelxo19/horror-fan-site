@@ -41,7 +41,7 @@ export function Sidebar({ className, ...props }: SidebarProps) {
       <div
         className={cn(
           "fixed h-[calc(100vh-64px)] bg-[#0b0907] transition-all duration-300 z-30",
-          collapsed ? "w-[60px]" : "w-[230px]",
+          collapsed ? "w-[50px]" : "w-[230px]",
           mobileOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0",
           className
         )}
