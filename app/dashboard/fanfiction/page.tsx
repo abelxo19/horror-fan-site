@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 
 const FictionPage = () => {
   return (
-    <div className="-ml-2 flex h-screen w-full items-center justify-center bg-[#0b0907] px-2 text-white">
+    <div className="-ml-2 flex h-screen w-full items-center justify-center bg-[#0b0907] pr-1 text-white">
       <div className="flex max-w-3xl flex-col items-center text-center">
         <div className="mb-2 flex items-center justify-center">
           <Sparkles className="mr-2 h-6 w-6 text-amber-300" />
@@ -17,7 +17,7 @@ const FictionPage = () => {
 
         <div className="mt-4 h-1 w-24 animate-pulse rounded bg-gradient-to-r from-purple-400 via-pink-500 to-amber-400"></div>
 
-        <p className="mt-6 text-base text-gray-300 sm:text-xl">
+        <p className="mt-6 text-sm text-gray-300 sm:text-lg">
           Our fanfiction feature is currently under development. Soon you&apos;ll be able to explore, create, and share
           amazing stories with the community.
         </p>
