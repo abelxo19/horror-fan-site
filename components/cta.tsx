@@ -30,8 +30,8 @@ export default function HorrorCTA() {
         transition={{ duration: 1, ease: "easeOut" }}
         className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center"
       >
-        <h2 className="text-xl md:text-3xl font-bold mb-4 text-white">Join Our Telegram Channel</h2>
-        <p className="text-base md:text-xl mb-8 text-gray-200">
+        <h2 className="text-lg md:text-xl font-bold mb-4 text-white font-nosifer">Join Our Telegram Channel</h2>
+        <p className="text-sm md:text-xl mb-8 text-gray-200">
         Explore the best horror movies, thrilling series, and chilling fan fiction also connect with fellow fans.
         </p>
         <Link href="https://t.me/HorrorMovies_Hub">

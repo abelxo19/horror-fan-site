@@ -64,8 +64,8 @@ function FeatureCard({ icon: Icon, title, description, index }: FeatureCardProps
       >
         <Icon className="w-8 h-8 text-black" />
       </motion.div>
-      <h3 className="text-xl font-semibold mb-2">{title}</h3>
-      <p className="text-gray-400">{description}</p>
+      <h3 className="text-base md:text-xl font-semibold mb-2">{title}</h3>
+      <p className=" text-sm md:text-base text-gray-400">{description}</p>
     </motion.div>
   )
 }
