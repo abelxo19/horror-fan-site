@@ -11,9 +11,10 @@ const poppins = Poppins({
 
 
 export const metadata: Metadata = {
-  title: "Haunt",
-  description: "horror website to horror fans",
-  icons: "/favicon.png",
+  title: "Haunt - The Ultimate Horror Fan Site",
+  description: "Explore the chilling world of horror with Haunt! A community-driven horror website for fans of spooky stories, horror movies, and supernatural tales. Created by Abel Atkelet.",
+  keywords: "horror, horror movies, horror stories, scary tales, ghost stories, supernatural, thriller, horror fans",
+  authors: [{ name: "Abel Atkelet", url: "https://horror-fan-site.vercel.app" }],
   
 };
 
