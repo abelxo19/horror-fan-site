@@ -20,12 +20,9 @@ export default async function TopMovies() {
         {movies.map((movie) => (
           <MovieCard
             key={movie.id}
-            id={movie.id}
             title={movie.title}
             description={movie.description}
             releaseDate={movie.releaseDate}
-            director={movie.director || undefined}
-            genre={movie.genre}
             image={movie.image}
             thriller={movie.thriller}
             rating={movie.rating}

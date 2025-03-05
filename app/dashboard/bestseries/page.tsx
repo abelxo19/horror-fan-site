@@ -20,7 +20,6 @@ export default async function TopSeries() {
         {series.map((serie) => (
           <SeriesCard
             key={serie.id}
-            id={serie.id}
             title={serie.title}
             description={serie.description}
             releaseDate={serie.releaseDate}
