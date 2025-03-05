@@ -19,9 +19,7 @@ const HeaderDash = async () => {
 
   return (
     <div className='flex justify-between items-center'>
-      <Link href="/dashboard">
         <Image src={Logo} alt="Logo-Image" width={70} height={70} />
-      </Link>
       
       <DropdownMenu>
         <DropdownMenuTrigger className='focus:outline-none'>

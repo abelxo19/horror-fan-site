@@ -17,7 +17,7 @@ const DashboardPage = async() => {
   }
   return (
     <div className='min-h-screen overflow-hidden'>
-      <p className='text-2xl md:text-4xl font-creeper text-white text-center pb-14'>Welcome to the Haunt <span
+      <p className=' text-2xl md:text-4xl font-creeper text-white md:text-center pb-14'>Welcome to the Haunt <span
           style={{
             color: "transparent",
             WebkitTextStroke: "1px white",

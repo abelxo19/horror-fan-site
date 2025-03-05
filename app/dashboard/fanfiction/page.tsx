@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 
 const FictionPage = () => {
   return (
-    <div className="flex h-screen w-full items-center justify-center bg-[#0b0907] px-4 text-white">
+    <div className="-ml-2 flex h-screen w-full items-center justify-center bg-[#0b0907] px-2 text-white">
       <div className="flex max-w-3xl flex-col items-center text-center">
         <div className="mb-2 flex items-center justify-center">
           <Sparkles className="mr-2 h-6 w-6 text-amber-300" />

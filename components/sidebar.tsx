@@ -31,7 +31,6 @@ export function Sidebar({ className, ...props }: SidebarProps) {
 
   return (
     <>
-      {/* Mobile menu button */}
       <button
         className="fixed md:hidden z-40 bottom-4 right-4 bg-[#1a1918] p-3 rounded-full shadow-lg"
         onClick={() => setMobileOpen(!mobileOpen)}
@@ -82,7 +81,6 @@ type NavItemProps = {
 function NavItem({ icon, label, href, collapsed }: NavItemProps) {
     const pathname = usePathname()
   
-    // Ensure "Home" is only active on /dashboard, not on its subpaths
     const isActive = pathname === href || (href !== "/dashboard" && pathname.startsWith(href + "/"))
   
     return (
