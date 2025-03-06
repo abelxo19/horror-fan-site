@@ -8,7 +8,7 @@ export default async function TopSeries() {
 
   return (
     <div className="">
-      <h1 className="text-2xl md:text-3xl font-bold mb-4 text-white ml-2 font-creeper">Top Horror <span
+      <h1 className="text-2xl md:text-3xl font-bold mb-4 text-white max-sm:ml-3  md:text-center font-creeper">Top Horror <span
           style={{
             color: "transparent",
             WebkitTextStroke: "1px white",

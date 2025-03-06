@@ -8,7 +8,7 @@ export default async function TopMovies() {
 
   return (
     <div className="">
-      <h1 className=" font-creeper text-2xl md:text-3xl font-bold mb-4 text-white ml-2">Top Horror <span
+      <h1 className=" font-creeper text-2xl md:text-3xl font-bold mb-4 text-white max-sm:ml-2 md:text-center">Top Horror <span
           style={{
             color: "transparent",
             WebkitTextStroke: "1px white",
