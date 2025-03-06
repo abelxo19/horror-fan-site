@@ -3,7 +3,41 @@ import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server"
 import { redirect } from "next/navigation"
 import Headerdash from "@/components/header_dash"
 import { Sidebar } from "@/components/sidebar"
+import prisma from "@/lib/prisma";
+import { unstable_noStore as noStore } from "next/cache";
 
+async function getData({
+  email,
+  id,
+  firstName,
+  lastName,
+}: {
+  email: string;
+  id: string;
+  firstName: string | undefined | null;
+  lastName: string | undefined | null;
+}) {
+  noStore();
+  const user = await prisma.user.findUnique({
+    where: {
+      id: id,
+    },
+    select: {
+      id: true,
+    },
+  });
+
+  if (!user) {
+    const name = `${firstName ?? ""} ${lastName ?? ""}`;
+    await prisma.user.create({
+      data: {
+        id: id,
+        email: email,
+        name: name,
+      },
+    });
+  }
+}
 export default async function DashboardLayout({
   children,
 }: {
@@ -15,6 +49,12 @@ export default async function DashboardLayout({
   if (!user) {
     return redirect("/")
   }
+  await getData({
+    email: user.email as string,
+    firstName: user.given_name as string,
+    id: user.id as string,
+    lastName: user.family_name as string,
+  });
 
   return (
     <div className="flex flex-col min-h-screen bg-[#0b0907]">
