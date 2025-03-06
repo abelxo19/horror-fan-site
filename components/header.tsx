@@ -174,8 +174,17 @@ const Header = ({ user }: { user: User | null }) => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex ml-48 items-center">
-            <nav className="bg-[#232e44] text-base rounded-full px-8 py-3 flex items-center space-x-8 border border-gray-800">
+          <motion.div
+            className="hidden md:flex absolute ml-[450px] -translate-x-1/2 items-center"
+            initial={{ opacity: 0, scale: 0.95, y: -20 }}
+            animate={{
+              opacity: scrolled ? 1 : 0,
+              scale: scrolled ? 1 : 0.95,
+              y: scrolled ? 0 : -20,
+            }}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
+          >
+            <nav className="bg-[#232e44] text-base rounded-full px-8 py-3 flex items-center space-x-8 border border-gray-800 shadow-xl">
               <Link href="/" className="text-white hover:text-gray-300 text-sm font-medium transition-colors">
                 Home
               </Link>
@@ -189,7 +198,8 @@ const Header = ({ user }: { user: User | null }) => {
                 Contact
               </Link>
             </nav>
-          </div>
+          </motion.div>
+
 
           {/* Mobile Menu Button */}
           <motion.button
