@@ -34,7 +34,7 @@ const DashboardPage = async() => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="mb-6 text-xs md:text-sm text-gray-400 max-sm:w-64">Get exclusive horror content and movie recommendations on our Telegram channel</p>
+              <p className="mb-5 text-xs md:text-sm text-gray-400 max-sm:w-64">Get exclusive horror content and movie recommendations on our Telegram channel</p>
               <Link href="https://t.me/HorrorMovies_Hub" passHref>
               <Button variant="outline" className="w-2/4 text-center  md:w-full  hover:bg-gray-300 hover:text-black">
                 Join Telegram Channel
